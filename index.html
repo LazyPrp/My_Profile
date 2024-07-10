@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">PAPPURAJA PRASAD</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Eductaion</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <nav id="hamburger-nav">
+    <div class="logo">PAPPURAJA PRASAD</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#education" onclick="toggleMenu()">Eductaion</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section_pic-container">
+      <img src="assets/Profile_pic.png" alt="My_pic" />
+    </div>
+    <div class="section_text">
+      <p class="section_text_p1">Hello, I'm</p>
+      <h1 class="title">Pappuraja Prasad</h1>
+      <p class="section_text_p2">B.E Graduate 2022</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open
+        ('assets/Pappuraja_Prasad_CV.pdf')">View CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="assets/linkedin.png" alt="my linkedin profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/pappuraja-prasad-296a78291/'" />
+        <img src="assets/github.png" alt="my github profile" class="icon"
+          onclick="location.href='https://github.com/LazyPrp'" />
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <p class="section_text_p1">Get to Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section_pic-container">
+        <img src="assets/About_pic.png" alt="profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-container">
+          <div class="details-container">
+            <img src="assets/experience.png" alt="experience icon" class="icon" />
+            <h3><u>Experience</u></h3>
+            <p>1 Month<br>Java Development Intern</p>
+            <p>at Veritech Software IT Services </p>
+          </div>
+          <div class="details-container">
+            <img src="assets/education.png" alt="Education icon" class="icon" />
+            <h3><u>Education</u></h3>
+            <p>B.E Mechanical Engg. degree (2018-2022) <br>
+              12<sup>th</sup> (2017-2018)<br>
+              10<sup>th</sup>(2015-2016)</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am a Mechanical Engineering graduate from Pdea College of Engineering, Manjari,
+            with a strong interest in software development. I hold certifications in Full Stack Java Development
+            from IANT. I am proficient in HTML, CSS, JavaScript, Java, MySQL, C++, Spring, Hibernate, Angular,
+            Bootstrap, and jQuery.
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <img src="assets/down-arrow.png" alt="arrow icon " class="icon arrow" onclick="location.href='./#education'" />
+  </section>
+
+
+  <section id="education">
+    <p class="section_text_p1">My Education includes:</p>
+    <h1 class="title">Education</h1>
+    <div class="experience-details-container">
+      <div class="about-container">
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title underline">B.E MEchanical</h2>
+          <div class="article-container">
+            <img src="assets/pdea2.png" alt="B.E college" class="project-img education-img" />
+            <h2 class="experience-sub-title project-title">PDEA College of Engg</h2>
+          </div>
+          <p class="section_text_p1">(2018-2022)</p>
+          <h3>Sucessfully completed 4 year graduation with <br> 8.91 CGPA !!!</h3>
+        </div>
+
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title underline">12 th</h2>
+          <div class="article-container">
+            <img src="assets/college2.png" alt="ST. vincets' jr college" class="project-img education-img" />
+            <h2 class="experience-sub-title project-title">St. Vincents' Jr College</h2>
+          </div>
+          <p class="section_text_p1">(2017-2018)</p>
+          <h3>Achieved First class with 66% <br> subjects included PCMB & IT</h3>
+        </div>
+
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title underline">10 th</h2>
+          <div class="article-container">
+            <img src="assets/school1.png" alt="HACS" class="project-img education-img" />
+            <h2 class="experience-sub-title project-title">Holy Angels Convent School</h2>
+          </div>
+          <p class="section_text_p1">(2015-2016)</p>
+          <h3>Achieved First class with distinction securing 86% </h3>
+        </div>
+      </div>
+    </div>
+    <img src="assets/down-arrow.png" alt="arrow icon " class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+
+  <section id="skills">
+    <p class="section_text_p1">My Technical</p>
+    <h1 class="title">Skills</h1>
+    <div class="skills-container">
+      <div class="skill-category">
+        <h2 class="experience-sub-title">Languages & Technologies</h2>
+        <ul class="skill-list">
+          <li><i class="fas fa-code"></i> Java</li>
+          <li><i class="fas fa-code"></i> Javascript</li>
+          <li><i class="fas fa-code"></i> C++</li>
+          <li><i class="fas fa-code"></i> HTML</li>
+          <li><i class="fas fa-code"></i> CSS</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h2 class="experience-sub-title">Frameworks</h2>
+        <ul class="skill-list">
+          <li><i class="fas fa-cogs"></i> Angular</li>
+          <li><i class="fas fa-cogs"></i> Hibernate</li>
+          <li><i class="fas fa-cogs"></i> Spring</li>
+          <li><i class="fas fa-cogs"></i> Bootstrap</li>
+          <li><i class="fas fa-cogs"></i> jQuery</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h2 class="experience-sub-title">Database Management</h2>
+        <ul class="skill-list">
+          <li><i class="fas fa-database"></i> SQL</li>
+          <li><i class="fas fa-database"></i> MySQL</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h2 class="experience-sub-title">Development Tools</h2>
+        <ul class="skill-list">
+          <li><i class="fas fa-tools"></i> Git/GitHub</li>
+          <li><i class="fas fa-tools"></i> IntelliJ</li>
+          <li><i class="fas fa-tools"></i> Eclipse</li>
+          <li><i class="fas fa-tools"></i> Visual Studio Code</li>
+          <li><i class="fas fa-tools"></i> Apache Tomcat</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects">
+    <p class="section_text_p1">Explore My </p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-container">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/hms.JPG" alt="hotel management system" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Hotel Management System</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/LazyPrp/Hotel-Management-System'">Github</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/snake_game_j.JPG" alt="Snake_Game" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Snake Game using Java & Swing UI </h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/LazyPrp/Java-dev-task'">Github</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/bbgame.JPG" alt="Brick_breaker" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Brick Breaker Game</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/LazyPrp/java-dev-task-4'">Github</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/down-arrow.png" alt="arrow icon " class="icon arrow" onclick="location.href='./#contact'" />
+
+  </section>
+
+
+  <section id="contact">
+    <p class="section_text_p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="assets/gmail.png" alt="email icon" class="icon email-icon" />
+        <p><a href="mailto:pappurajaprasad22@gmail.com">&nbsp pappurajaprasad22@gmail.com</a></p>
+    </div>
+
+      <div class="contact-info-container">
+        <img src="assets/linkedin.png" alt="linkedin icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/pappuraja-prasad-296a78291/">&nbsp Linkedin</a></p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Education">Eductaion</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Pappuraja Prasad. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
